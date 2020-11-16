@@ -1,0 +1,31 @@
+{
+  "name": "jillalcan",
+  "version": "1.0.0",
+  "description": "Personal website for Jill Alcan.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sgt-Forge/jillalcan.git"
+  },
+  "keywords": [
+    "nodejs",
+    "website"
+  ],
+  "author": "Paul Nakonieczny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sgt-Forge/jillalcan/issues"
+  },
+  "homepage": "https://github.com/Sgt-Forge/jillalcan#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
