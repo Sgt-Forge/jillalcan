@@ -15,4 +15,8 @@ app.get('/', (req, res) => {
     res.render('index', {articles: articles});
 })
 
+<<<<<<< Updated upstream
 app.listen(5000);
+=======
+app.listen(8080)
+>>>>>>> Stashed changes
