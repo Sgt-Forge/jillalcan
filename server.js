@@ -1,6 +1,9 @@
 const express = require('express');
 const articleRouter = require('./routes/articles');
-const app = express()
+const app = express();
+
+const PORT = 8080;
+const HOST = '0.0.0.0';
 
 app.set('view engine', 'ejs');
 
@@ -11,8 +14,9 @@ app.get('/', (req, res) => {
         title: 'Test Articles',
         createdAt: Date.now(),
         description: 'Test description'
-    }]
+    }];
     res.render('index', {articles: articles});
 })
 
-app.listen(5000);
+app.listen(PORT, HOST);
+console.log('Running on http://${HOST}:${PORT}');
