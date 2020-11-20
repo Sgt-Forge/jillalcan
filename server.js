@@ -18,13 +18,7 @@ app.get('/', (req, res) => {
     res.render('index', {articles: articles});
 })
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-app.listen(5000);
-=======
 app.listen(8080)
->>>>>>> Stashed changes
-=======
+
 app.listen(PORT, HOST);
 console.log('Running on http://${HOST}:${PORT}');
->>>>>>> b9f03756600a12f5af8318b3314758709af9e5e5
