@@ -2,7 +2,7 @@ const express = require('express');
 const articleRouter = require('./routes/articles');
 const app = express();
 
-const PORT = 8080;
+const PORT = 8090;
 const HOST = '0.0.0.0';
 
 app.set('view engine', 'ejs');
