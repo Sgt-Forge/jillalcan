@@ -1,24 +1,18 @@
 const express = require('express');
-const articleRouter = require('./routes/articles');
 const app = express();
 
 const PORT = 8090;
 const HOST = '0.0.0.0';
 
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/css', express.static(__dirname + '/public/css'));
+
 app.set('view engine', 'ejs');
 
-app.use('/articles', articleRouter);
-
 app.get('/', (req, res) => {
-    const articles = [{
-        title: 'Test Articles',
-        createdAt: Date.now(),
-        description: 'Test description'
-    }];
-    res.render('index', {articles: articles});
+    res.render('index/index');
 })
 
-app.listen(8080)
-
 app.listen(PORT, HOST);
-console.log('Running on http://${HOST}:${PORT}');
