@@ -12,22 +12,27 @@ body {
 hr {
   border-top: 3px solid #191919; }
 
-.card {
-  width: 250px;
-  height: 250px;
-  overflow: hidden; }
-
 img {
   width: auto;
   height: 100%;
   position: absolute; }
 
+svg:hover {
+  color: #FF785A !important; }
+
+.card {
+  width: 250px;
+  height: 250px;
+  overflow: hidden; }
+
 .cutoff {
   overflow: hidden; }
 
+.header {
+  min-height: 5rem; }
+
+.intro {
+  animation: 1s ease-out 0s 1 slideInFromTop; }
+
 .profile {
   margin-top: 10rem; }
-
-#intro {
-  animation: 1s ease-out 0s 1 slideInFromTop;
-  font-size: 10rem; }
